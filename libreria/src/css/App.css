@@ -1,9 +1,7 @@
-.App {
-  font-family: Arial, sans-serif;
-  text-align: center;
-  max-width: 600px;
-  margin: 0 auto;
-  padding: 20px;
+html,
+body {
+  margin: 0;
+  padding: 0;
 }
 
 h1 {
@@ -75,6 +73,69 @@ li button:hover {
   background-color: #d83232;
 }
 
+.App {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  position: relative;
+  top: 200px;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.library {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.library {
+  background-color: #8ec5fc;
+  background-image: linear-gradient(62deg, #8ec5fc 0%, #e0c3fc 100%);
+}
+
+.navbar {
+  position: fixed;
+  width: 100%;
+  top: 0;
+}
+
+.sidebar {
+  width: 100%;
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #1c1b1f21;
+  color: white;
+  align-items: center;
+  align-content: space-between;
+}
+
+.sidebar h2 {
+  margin-right: auto;
+}
+
+.sidebar button {
+  background-color: #ffffff;
+  height: 35px;
+  color: rgb(0, 0, 0);
+  padding: 10px 15px;
+  margin-right: 50px;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.sidebar button:hover {
+  background-color: #e6e1e5;
+}
+
+.content {
+  flex: 1;
+  padding: 20px;
+}
+
 @media (max-width: 768px) {
   ul {
     padding-left: 0;
@@ -92,5 +153,13 @@ li button:hover {
     top: 5px;
     right: 5px;
     padding: 3px 6px;
+  }
+
+  .container {
+    flex-direction: column;
+  }
+
+  .sidebar {
+    width: 95%;
   }
 }
